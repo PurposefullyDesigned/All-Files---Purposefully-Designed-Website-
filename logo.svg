@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" width="280" height="70" role="img" aria-label="Purposefully Designed butterfly logo">
+  <title>Purposefully Designed</title>
+  <!-- Butterfly body -->
+  <ellipse cx="35" cy="35" rx="3" ry="14" fill="#5fb8c4" opacity="0.9"/>
+  <!-- Left upper wing -->
+  <path d="M32 28 C18 10, 5 12, 8 26 C11 36, 20 38, 32 35 Z" fill="none" stroke="#5fb8c4" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Left lower wing -->
+  <path d="M32 38 C16 38, 8 45, 10 54 C13 62, 24 60, 32 50 Z" fill="none" stroke="#5fb8c4" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Right upper wing -->
+  <path d="M38 28 C52 10, 65 12, 62 26 C59 36, 50 38, 38 35 Z" fill="none" stroke="#5fb8c4" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Right lower wing -->
+  <path d="M38 38 C54 38, 62 45, 60 54 C57 62, 46 60, 38 50 Z" fill="none" stroke="#5fb8c4" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Wing vein details left upper -->
+  <path d="M32 33 C24 28, 15 20, 12 18" fill="none" stroke="#5fb8c4" stroke-width="0.8" opacity="0.6"/>
+  <!-- Wing vein details right upper -->
+  <path d="M38 33 C46 28, 55 20, 58 18" fill="none" stroke="#5fb8c4" stroke-width="0.8" opacity="0.6"/>
+  <!-- Antennae -->
+  <path d="M33 21 C30 14, 26 10, 24 7" fill="none" stroke="#5fb8c4" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="24" cy="7" r="2" fill="#5fb8c4"/>
+  <path d="M37 21 C40 14, 44 10, 46 7" fill="none" stroke="#5fb8c4" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="46" cy="7" r="2" fill="#5fb8c4"/>
+  <!-- "Purposefully Designed" text -->
+  <text x="78" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#6b3fa0" letter-spacing="0.5">Purposefully</text>
+  <text x="78" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#6b3fa0" letter-spacing="0.5">Designed</text>
+</svg>
