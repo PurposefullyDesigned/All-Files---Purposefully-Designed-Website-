@@ -90,7 +90,7 @@ body {
 }
 .top-nav a:hover,
 .top-nav a:focus { color: #fff; outline: none; background: #5fb8c4; border-color: #5fb8c4; }
-.top-nav a[aria-current="page"] { color: #6b3fa0; font-weight: 700; background: #5fb8c4; border-color: #5fb8c4; }
+.top-nav a[aria-current="page"] { color: #45206d; font-weight: 700; background: #5fb8c4; border-color: #5fb8c4; }
 
 /* Hamburger (mobile) */
 #navToggle {
