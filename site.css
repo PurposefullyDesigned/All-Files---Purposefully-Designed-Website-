@@ -71,19 +71,26 @@ body {
 }
 
 /* Top nav */
-.top-nav { display: flex; gap: 1.5rem; align-items: center; }
+.top-nav { display: flex; gap: 0.65rem; align-items: center; flex-wrap: wrap; }
 .top-nav a {
   font-size: 0.85rem;
-  font-weight: 500;
-  color: rgba(58, 74, 85, 0.8);
+  font-weight: 600;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.25s;
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+  background: #c8a2e0;
+  border: 2px solid #c8a2e0;
+  border-radius: 6px;
+  min-height: 2.5rem;
+  min-width: 6.5rem;
+  padding: 0.55rem 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .top-nav a:hover,
-.top-nav a:focus { color: #3a4a55; outline: none; border-bottom-color: #5fb8c4; }
-.top-nav a[aria-current="page"] { color: #6b3fa0; font-weight: 700; border-bottom-color: #6b3fa0; }
+.top-nav a:focus { color: #fff; outline: none; background: #5fb8c4; border-color: #5fb8c4; }
+.top-nav a[aria-current="page"] { color: #6b3fa0; font-weight: 700; background: #5fb8c4; border-color: #5fb8c4; }
 
 /* Hamburger (mobile) */
 #navToggle {
@@ -149,58 +156,32 @@ body {
   margin-left: 160px;
   flex: 1;
   min-width: 0;
-  padding: 2rem 1.5rem;
 }
 
-main { max-width: 900px; }
-main section { margin-bottom: 3rem; }
-main h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #3a4a55; }
-main h1 span { color: #6b3fa0; }
-main h2 { font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; color: #3a4a55; }
-main h2 span { color: #6b3fa0; }
-main p { font-size: 1.125rem; line-height: 1.6; color: rgba(58, 74, 85, 0.9); margin-bottom: 1.5rem; }
-main h3 { font-size: 1.25rem; font-weight: 600; color: #3a4a55; }
+.home-logo-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto 3rem;
+}
 
-.hero { padding: 2rem 0; }
-.hero p { font-size: 1.25rem; line-height: 1.7; }
-.buttons { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
-.primary-btn, .secondary-btn {
-  padding: 0.75rem 1.75rem;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  display: inline-block;
-}
-.primary-btn {
-  background: linear-gradient(90deg, #6b3fa0, #5fb8c4);
-  color: #fff;
-}
-.primary-btn:hover { opacity: 0.9; transform: translateY(-2px); }
-.secondary-btn {
-  background: rgba(107, 63, 160, 0.1);
-  color: #6b3fa0;
-  border: 2px solid #6b3fa0;
-}
-.secondary-btn:hover { background: rgba(107, 63, 160, 0.2); }
-
-.features .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.card {
+.home-logo-square {
+  width: min(72vw, 340px);
+  aspect-ratio: 1 / 1;
   background: #fff;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #d8e3eb;
-  transition: all 0.3s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 10px 28px rgba(58, 74, 85, 0.12);
 }
-.card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); }
+
+.home-logo-square img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
 
 /* ===== FOOTER ===== */
 footer {
@@ -211,7 +192,6 @@ footer {
   color: rgba(58, 74, 85, 0.6);
   font-size: 0.875rem;
   margin-left: 160px;
-  margin-top: auto;
 }
 
 /* ===== FOCUS STYLES ===== */
@@ -238,7 +218,11 @@ a:focus-visible, button:focus-visible {
     padding: 0.5rem 0;
   }
   .top-nav.active { display: flex; }
-  .top-nav a { padding: 0.75rem 1.5rem; border-bottom: none; }
+  .top-nav a {
+    width: calc(100% - 1.5rem);
+    margin: 0.25rem 0.75rem;
+    min-width: 0;
+  }
   #navToggle { display: block; }
 
   .sidebar-nav {
@@ -260,8 +244,4 @@ a:focus-visible, button:focus-visible {
 
   .main-content { margin-left: 90px; }
   footer { margin-left: 90px; }
-  main h1 { font-size: 1.75rem; }
-  main h2 { font-size: 1.25rem; }
-  .buttons { flex-direction: column; }
-  .primary-btn, .secondary-btn { width: 100%; text-align: center; }
 }
